@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Cool stuff</title>
+		<link rel="stylesheet" href="/main.css"/>
+	</head>
+	<body>
+		<nav>
+			{{ range .Site.Sections }}
+			<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+			{{ end }}
+			<h2><a href="/project">Project</a></h2>
+			<h2><a href="/about">About</a></h2>
+		</nav>
+		{{ block "main" . }}
+		{{end}}
+	</body>
+</html>

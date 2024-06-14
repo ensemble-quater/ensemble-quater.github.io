@@ -1,9 +1,57 @@
 body {
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 }
 
+body.homepage {
+	background-image: url('/background.jpg');
+	background-size: cover; /* Cover the entire background */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Prevent the image from repeating */
+	background-attachment: fixed; /* Fix the background while scrolling */
+}
+
 nav {
 	display: flex;
+	justify-content: space-around;
+}
+
+#banner {
+	display: flex;
 	justify-content: space-between;
+	align-items: start;
+	max-height: 200px;
+}
+
+#banner-logo {
+	aspect-ratio: 1/1;
+	max-height: 100%;
+	max-width: 20%;
+}
+
+#banner-nav {
+	padding: 1em;
+	min-width: 33%;
+
+	background: #ffd86b;
+	opacity: 50%;
+
+	border-bottom-left-radius: 1em;
+
+	transition: 0.2s;
+}
+
+#banner-nav:hover {
+	opacity: 100%;
+}
+
+#banner-nav > a {
+	
+}
+
+section#project {
+	padding: 0em 5em;
+	margin: auto;
+	min-width: 50%;
 }

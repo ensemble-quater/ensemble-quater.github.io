@@ -2,12 +2,12 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Ensemble Quater</title>
-		<link rel="stylesheet" href="main.css"/>
+		<link rel="stylesheet" href={{ absURL "main.css" }}/>
 	</head>
 	<body>
 		<div id="banner">
 			{{ with resources.GetMatch "images/logo-eq.png" }}
-			<a href="">
+			<a href={{ absURL "" }}>
 				<img src="{{ .RelPermalink }}" id="banner-logo">
 			</a>
 			{{ end }}

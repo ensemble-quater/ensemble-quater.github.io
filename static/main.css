@@ -58,6 +58,7 @@ nav {
 #banner-nav {
 	padding: 1em;
 	min-width: 33%;
+	min-height: 100px;
 
 	border-bottom-left-radius: 1em;
 }

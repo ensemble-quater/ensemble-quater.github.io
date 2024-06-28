@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bercarets'; /*a name to be used later*/
-    src: url('/ensemble-quater/fonts/bercarets.ttf'); /*URL to font*/
+    src: url('/fonts/bercarets.ttf'); /*URL to font*/
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 body.homepage {
-	background-image: url('/ensemble-quater/background.jpg');
+	background-image: url('/background.jpg');
 	background-size: cover; /* Cover the entire background */
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Prevent the image from repeating */

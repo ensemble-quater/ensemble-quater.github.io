@@ -6,18 +6,11 @@
 	</head>
 	<body>
 		<div id="banner">
-			{{ with resources.GetMatch "images/logo.jpg" }}
+			{{ with resources.GetMatch "images/logo-eq.png" }}
 			<a href="/">
 				<img src="{{ .RelPermalink }}" id="banner-logo">
 			</a>
 			{{ end }}
-			<nav id="banner-nav">
-				{{ range .Site.Sections }}
-				<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-				{{ end }}
-				<h2><a href="/project">Project</a></h2>
-				<h2><a href="/about">About</a></h2>
-			</nav>
 		</div>
 		{{ block "main" . }}
 		{{end}}

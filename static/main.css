@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Bercarets'; /*a name to be used later*/
+    src: url('/fonts/bercarets.ttf'); /*URL to font*/
+}
+
 body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	background: #dbd1cc;
 }
 
 body.homepage {
@@ -10,6 +16,28 @@ body.homepage {
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Prevent the image from repeating */
 	background-attachment: fixed; /* Fix the background while scrolling */
+
+	position: relative;
+}
+
+#title-banner {
+	align-self: center;
+	font-family: "Bercarets";
+	text-align: center;
+	font-size: 10em;
+
+
+	position: absolute;
+	/* new */
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1); /* light shadow */
+
+	color: #DAB4A0;
+
+	background: rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -19,34 +47,35 @@ nav {
 
 #banner {
 	display: flex;
-	justify-content: space-between;
-	align-items: start;
+	justify-content: end;
 	max-height: 200px;
 }
 
 #banner-logo {
-	aspect-ratio: 1/1;
 	max-height: 100%;
-	max-width: 20%;
 }
 
 #banner-nav {
 	padding: 1em;
 	min-width: 33%;
 
-	background: #ffd86b;
-	opacity: 50%;
-
 	border-bottom-left-radius: 1em;
+}
 
+#banner-nav > * > a:hover {
+	opacity: 50%;
 	transition: 0.2s;
 }
 
-#banner-nav:hover {
-	opacity: 100%;
+* {
+	font-family: "Trebuchet MS"
 }
 
-#banner-nav > a {
+#banner-nav > * > a {
+	opacity: 100%;
+	transition: 0.2s;
+	text-decoration: none;
+	color: white;
 	
 }
 
@@ -54,4 +83,37 @@ section#project {
 	padding: 0em 5em;
 	margin: auto;
 	min-width: 50%;
+}
+
+#about {
+	padding: 0em 5em;
+	margin: auto;
+	min-width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#about > #content {
+}
+
+#images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+#images > .row > div {
+	text-align: center;
+}
+#images > .row > div > img {
+	height: 25em;
+	margin: 0 1em;
+}
+
+#images > .row {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: start;
+	justify-content: space-around;
 }

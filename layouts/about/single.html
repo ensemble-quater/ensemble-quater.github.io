@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section id="about">
+	<h1>
+		{{ .Title }}
+	</h1>
+	<div id="content">
+		{{ .Content }}
+
+		<div id="images">
+			<div class="row">
+				<div>
+		{{ $image := .Resources.Get "carlota.jpg" }}
+		<img src={{ $image }} alt="Carlota Ramos"/>
+					<p>Carlota Ramos</p>
+				</div>
+
+				<div>
+		{{ $image := .Resources.Get "liga.jpg" }}
+		<img src={{ $image }} alt="Liga Korne"/>
+					<p>Liga Korne</p>
+			</div>
+			</div>
+
+			<div class="row">
+			<div>
+		{{ $image := .Resources.Get "rita.jpg" }}
+		<img src={{ $image }} alt="Rita Couto Soares"/>
+					<p>Rita Couto Soares</p>
+			</div>
+
+			<div>
+		{{ $image := .Resources.Get "sharo.jpg" }}
+		<img src={{ $image }} alt="Shaghayegh Farahani"/>
+					<p>Shaghayegh Farahani</p>
+			</div>
+			</div>
+
+		<p>
+			Photos by Laura Westerhoff</p>
+		</div>
+
+	</div>
+</section>
+
+{{ end }}

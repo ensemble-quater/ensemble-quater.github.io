@@ -48,7 +48,7 @@ nav {
 #banner {
 	display: flex;
 	justify-content: end;
-	max-height: 200px;
+	max-height: 20em;
 }
 
 #banner-logo {
@@ -58,7 +58,7 @@ nav {
 #banner-nav {
 	padding: 1em;
 	min-width: 33%;
-	min-height: 100px;
+	min-height: 20%;
 
 	border-bottom-left-radius: 1em;
 }

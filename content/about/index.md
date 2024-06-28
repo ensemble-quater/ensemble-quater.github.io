@@ -2,7 +2,6 @@
 title = 'About'
 type = 'about'
 layout = 'single'
-draft = true
 +++
 
 We are an ensemble focused on contemporary and experimentelle music. 
